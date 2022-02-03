@@ -15,15 +15,16 @@
 		CF89963327ABA12F005F6D58 /* ChatStudyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89963227ABA12F005F6D58 /* ChatStudyAppTests.swift */; };
 		CF89963D27ABA12F005F6D58 /* ChatStudyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89963C27ABA12F005F6D58 /* ChatStudyAppUITests.swift */; };
 		CF89963F27ABA12F005F6D58 /* ChatStudyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89963E27ABA12F005F6D58 /* ChatStudyAppUITestsLaunchTests.swift */; };
-		CF89965A27ABA1C4005F6D58 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89965927ABA1C4005F6D58 /* RecordViewController.swift */; };
-		CF89965C27ABA1F6005F6D58 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89965B27ABA1F6005F6D58 /* MainTabBarController.swift */; };
-		CF89965E27ABA222005F6D58 /* ChatSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89965D27ABA222005F6D58 /* ChatSearchViewController.swift */; };
-		CF89966027ABA242005F6D58 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89965F27ABA242005F6D58 /* AccountViewController.swift */; };
-		CF89966227ABA25E005F6D58 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89966127ABA25E005F6D58 /* LoginViewController.swift */; };
-		CF89966427ABA271005F6D58 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89966327ABA271005F6D58 /* RegisterViewController.swift */; };
 		CF89966827ABAAB2005F6D58 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89966727ABAAB2005F6D58 /* UIView+Extension.swift */; };
 		CF89966A27ABAF0A005F6D58 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89966927ABAF0A005F6D58 /* UIColor+Extension.swift */; };
 		CF89966D27ABB197005F6D58 /* AuthenticationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89966C27ABB197005F6D58 /* AuthenticationLabel.swift */; };
+		CF89967A27ABBC31005F6D58 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89967927ABBC31005F6D58 /* LoginViewController.swift */; };
+		CF89967C27ABBC60005F6D58 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89967B27ABBC60005F6D58 /* RegisterViewController.swift */; };
+		CF89967E27ABBC8E005F6D58 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89967D27ABBC8E005F6D58 /* MainTabBarController.swift */; };
+		CF89968027ABBCAB005F6D58 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89967F27ABBCAB005F6D58 /* RecordViewController.swift */; };
+		CF89968227ABBCC2005F6D58 /* ChatSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89968127ABBCC2005F6D58 /* ChatSearchViewController.swift */; };
+		CF89968427ABBCD6005F6D58 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89968327ABBCD6005F6D58 /* AccountViewController.swift */; };
+		CF89968627ABC50E005F6D58 /* AuthenticationTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89968527ABC50E005F6D58 /* AuthenticationTextFeild.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,15 +57,16 @@
 		CF89963827ABA12F005F6D58 /* ChatStudyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatStudyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF89963C27ABA12F005F6D58 /* ChatStudyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStudyAppUITests.swift; sourceTree = "<group>"; };
 		CF89963E27ABA12F005F6D58 /* ChatStudyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStudyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CF89965927ABA1C4005F6D58 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecordViewController.swift; path = ../../../RecordViewController.swift; sourceTree = "<group>"; };
-		CF89965B27ABA1F6005F6D58 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = ../../../MainTabBarController.swift; sourceTree = "<group>"; };
-		CF89965D27ABA222005F6D58 /* ChatSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatSearchViewController.swift; path = ../../../ChatSearchViewController.swift; sourceTree = "<group>"; };
-		CF89965F27ABA242005F6D58 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountViewController.swift; path = ../../../AccountViewController.swift; sourceTree = "<group>"; };
-		CF89966127ABA25E005F6D58 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../LoginViewController.swift; sourceTree = "<group>"; };
-		CF89966327ABA271005F6D58 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../../../../RegisterViewController.swift; sourceTree = "<group>"; };
 		CF89966727ABAAB2005F6D58 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		CF89966927ABAF0A005F6D58 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CF89966C27ABB197005F6D58 /* AuthenticationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLabel.swift; sourceTree = "<group>"; };
+		CF89967927ABBC31005F6D58 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF89967B27ABBC60005F6D58 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CF89967D27ABBC8E005F6D58 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CF89967F27ABBCAB005F6D58 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		CF89968127ABBCC2005F6D58 /* ChatSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSearchViewController.swift; sourceTree = "<group>"; };
+		CF89968327ABBCD6005F6D58 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		CF89968527ABC50E005F6D58 /* AuthenticationTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextFeild.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +117,9 @@
 		CF89961A27ABA12E005F6D58 /* ChatStudyApp */ = {
 			isa = PBXGroup;
 			children = (
+				CF89966E27ABBAAF005F6D58 /* Controllers */,
 				CF89966627ABA9EF005F6D58 /* Extensions */,
 				CF89966527ABA708005F6D58 /* Views */,
-				CF89964B27ABA16C005F6D58 /* Controllers */,
 				CF89961B27ABA12E005F6D58 /* AppDelegate.swift */,
 				CF89961D27ABA12E005F6D58 /* SceneDelegate.swift */,
 				CF89961F27ABA12E005F6D58 /* ViewController.swift */,
@@ -145,28 +147,6 @@
 			path = ChatStudyAppUITests;
 			sourceTree = "<group>";
 		};
-		CF89964B27ABA16C005F6D58 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CF89964F27ABA16C005F6D58 /* Authentication */,
-				CF89965B27ABA1F6005F6D58 /* MainTabBarController.swift */,
-				CF89965927ABA1C4005F6D58 /* RecordViewController.swift */,
-				CF89965D27ABA222005F6D58 /* ChatSearchViewController.swift */,
-				CF89965F27ABA242005F6D58 /* AccountViewController.swift */,
-			);
-			name = Controllers;
-			path = ../../ChatStudy/ChatStudy/Controllers;
-			sourceTree = "<group>";
-		};
-		CF89964F27ABA16C005F6D58 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				CF89966127ABA25E005F6D58 /* LoginViewController.swift */,
-				CF89966327ABA271005F6D58 /* RegisterViewController.swift */,
-			);
-			path = Authentication;
-			sourceTree = "<group>";
-		};
 		CF89966527ABA708005F6D58 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +168,28 @@
 			isa = PBXGroup;
 			children = (
 				CF89966C27ABB197005F6D58 /* AuthenticationLabel.swift */,
+				CF89968527ABC50E005F6D58 /* AuthenticationTextFeild.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CF89966E27ABBAAF005F6D58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF89967827ABBC1F005F6D58 /* Authentication */,
+				CF89967D27ABBC8E005F6D58 /* MainTabBarController.swift */,
+				CF89967F27ABBCAB005F6D58 /* RecordViewController.swift */,
+				CF89968127ABBCC2005F6D58 /* ChatSearchViewController.swift */,
+				CF89968327ABBCD6005F6D58 /* AccountViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF89967827ABBC1F005F6D58 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CF89967927ABBC31005F6D58 /* LoginViewController.swift */,
+				CF89967B27ABBC60005F6D58 /* RegisterViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -322,18 +324,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF89966427ABA271005F6D58 /* RegisterViewController.swift in Sources */,
-				CF89966227ABA25E005F6D58 /* LoginViewController.swift in Sources */,
+				CF89968627ABC50E005F6D58 /* AuthenticationTextFeild.swift in Sources */,
 				CF89962027ABA12E005F6D58 /* ViewController.swift in Sources */,
 				CF89966A27ABAF0A005F6D58 /* UIColor+Extension.swift in Sources */,
+				CF89968427ABBCD6005F6D58 /* AccountViewController.swift in Sources */,
 				CF89961C27ABA12E005F6D58 /* AppDelegate.swift in Sources */,
-				CF89965E27ABA222005F6D58 /* ChatSearchViewController.swift in Sources */,
 				CF89961E27ABA12E005F6D58 /* SceneDelegate.swift in Sources */,
-				CF89965C27ABA1F6005F6D58 /* MainTabBarController.swift in Sources */,
 				CF89966D27ABB197005F6D58 /* AuthenticationLabel.swift in Sources */,
-				CF89965A27ABA1C4005F6D58 /* RecordViewController.swift in Sources */,
+				CF89967E27ABBC8E005F6D58 /* MainTabBarController.swift in Sources */,
+				CF89967C27ABBC60005F6D58 /* RegisterViewController.swift in Sources */,
+				CF89968027ABBCAB005F6D58 /* RecordViewController.swift in Sources */,
+				CF89968227ABBCC2005F6D58 /* ChatSearchViewController.swift in Sources */,
+				CF89967A27ABBC31005F6D58 /* LoginViewController.swift in Sources */,
 				CF89966827ABAAB2005F6D58 /* UIView+Extension.swift in Sources */,
-				CF89966027ABA242005F6D58 /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
