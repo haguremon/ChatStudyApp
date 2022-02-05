@@ -63,7 +63,6 @@ class AuthenticationLowerHalfView: UIView {
         addSubview(stackViewButton)
         stackViewButton.anchor(top: lowerHalfViewTitlelabel.bottomAnchor,centerX: centerXAnchor,topPadding: 30)
         
-        
     }
     
     

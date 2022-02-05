@@ -31,6 +31,7 @@
 		CF89968F27AE57B3005F6D58 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CF89968E27AE57B3005F6D58 /* RxCocoa */; };
 		CF89969127AE57B3005F6D58 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CF89969027AE57B3005F6D58 /* RxRelay */; };
 		CF89969327AE57B3005F6D58 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CF89969227AE57B3005F6D58 /* RxSwift */; };
+		CF89969627AE61C1005F6D58 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89969527AE61C1005F6D58 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		CF89968727AE223B005F6D58 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
 		CF89968927AE3C07005F6D58 /* AuthenticationLowerHalfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLowerHalfView.swift; sourceTree = "<group>"; };
 		CF89968B27AE56D3005F6D58 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		CF89969527AE61C1005F6D58 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		CF89961A27ABA12E005F6D58 /* ChatStudyApp */ = {
 			isa = PBXGroup;
 			children = (
+				CF89969427AE61A3005F6D58 /* VIew Models */,
 				CF89966E27ABBAAF005F6D58 /* Controllers */,
 				CF89966627ABA9EF005F6D58 /* Extensions */,
 				CF89966527ABA708005F6D58 /* Views */,
@@ -207,6 +210,14 @@
 				CF89967B27ABBC60005F6D58 /* RegisterViewController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CF89969427AE61A3005F6D58 /* VIew Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF89969527AE61C1005F6D58 /* AuthenticationViewModel.swift */,
+			);
+			path = "VIew Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +360,7 @@
 			files = (
 				CF89968627ABC50E005F6D58 /* AuthenticationTextFeild.swift in Sources */,
 				CF89962027ABA12E005F6D58 /* ViewController.swift in Sources */,
+				CF89969627AE61C1005F6D58 /* AuthenticationViewModel.swift in Sources */,
 				CF89966A27ABAF0A005F6D58 /* UIColor+Extension.swift in Sources */,
 				CF89968427ABBCD6005F6D58 /* AccountViewController.swift in Sources */,
 				CF89961C27ABA12E005F6D58 /* AppDelegate.swift in Sources */,
