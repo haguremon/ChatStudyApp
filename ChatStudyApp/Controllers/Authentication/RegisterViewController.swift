@@ -17,6 +17,10 @@ class RegisterViewController: UIViewController {
     private let mailTextFeild = AuthenticationTextFeild(placeholder: "メールアドレス")
     private let passwordTextFeild = AuthenticationTextFeild(placeholder: "パスワード")
     
+    private let registerButton = AuthenticationButton(title: "新規登録", backgroundColor: .systemRed, tintColor: .white)
+    private  let alreadyhaveAnAccountButton = AuthenticationButton(title: "既にアカウントをお持ちの方はこちら", backgroundColor: nil, tintColor: .green)
+   private let lowerHalfView = AuthenticationLowerHalfView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,8 +33,9 @@ class RegisterViewController: UIViewController {
     
     //MARK: - methods
     private func configureUI() {
+        
         view.addSubview(titleLabel)
-        titleLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor,centerX: view.centerXAnchor,topPadding: 25)
+        titleLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor,centerX: view.centerXAnchor,topPadding: 35)
         titleLabel.setDimensions(height: view.bounds.height / 11, width: view.bounds.width / 1.25)
         titleLabel.font = .boldSystemFont(ofSize: view.bounds.height / 15)
         titleLabel.backgroundColor = .systemBlue
@@ -42,16 +47,39 @@ class RegisterViewController: UIViewController {
         subtitleLabel.layer.cornerRadius = view.bounds.height / 60
         
         
-        let stackView = UIStackView(arrangedSubviews: [nameTextFeild,mailTextFeild,passwordTextFeild])
-        stackView.axis = .vertical
-        stackView.spacing = 8.5
-        stackView.distribution = .fillEqually
-        view.addSubview(stackView)
-        nameTextFeild.setHeight(view.bounds.height / 15)
+        let stackViewTextFeild = UIStackView(arrangedSubviews: [nameTextFeild,mailTextFeild,passwordTextFeild])
+        stackViewTextFeild.axis = .vertical
+        stackViewTextFeild.spacing = 8.5
+        stackViewTextFeild.distribution = .fillEqually
+        view.addSubview(stackViewTextFeild)
+       // nameTextFeild.setHeight(view.bounds.height / 15)
+        nameTextFeild.setHeight(50)
         nameTextFeild.setWidth(view.bounds.width / 1.3)
-        stackView.anchor(top: subtitleLabel.bottomAnchor, centerX: view.centerXAnchor,topPadding: 20)
+        stackViewTextFeild.anchor(top: subtitleLabel.bottomAnchor, centerX: view.centerXAnchor,topPadding: 20)
         
+        let stackViewButton = UIStackView(arrangedSubviews: [registerButton,alreadyhaveAnAccountButton])
+        stackViewButton.axis = .vertical
+        stackViewButton.spacing = 10
+        stackViewButton.alignment = .center
+        stackViewButton.distribution = .fill
         
+        view.addSubview(stackViewButton)
+        
+        stackViewButton.anchor(top: stackViewTextFeild.bottomAnchor,centerX: view.centerXAnchor, topPadding: 20)
+        registerButton.anchor(width: view.bounds.width / 2,height: view.bounds.height / 22)
+        alreadyhaveAnAccountButton.anchor(width: view.bounds.width / 1.5)
+        alreadyhaveAnAccountButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        alreadyhaveAnAccountButton.addTarget(self, action: #selector(alreadyhaveAnAccountButtonTapped), for: .touchUpInside)
+        view.addSubview(lowerHalfView)
+        
+        lowerHalfView.anchor(top: stackViewButton.bottomAnchor, bottom: view.bottomAnchor, left: view.leftAnchor, centerX: view.centerXAnchor, topPadding: 10, bottomPadding: 0, leftPadding: 0, rightPadding: 0)
+        lowerHalfView.buttonViews.forEach { $0.setDimensions(height: view.bounds.width / 6, width: view.bounds.width / 6)
+            $0.layer.cornerRadius = view.bounds.width / 12
+        } 
+        
+    }
+    @objc func alreadyhaveAnAccountButtonTapped(){
+        alreadyhaveAnAccountButton.setTitleColor(.systemGray, for: .normal)
     }
     
     private func configureGradientLayer() {
@@ -66,6 +94,10 @@ class RegisterViewController: UIViewController {
         layer.frame = view.bounds
         view.layer.addSublayer(layer)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+         view.endEditing(true)
+     }
 
 
 }

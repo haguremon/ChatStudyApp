@@ -25,6 +25,12 @@
 		CF89968227ABBCC2005F6D58 /* ChatSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89968127ABBCC2005F6D58 /* ChatSearchViewController.swift */; };
 		CF89968427ABBCD6005F6D58 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89968327ABBCD6005F6D58 /* AccountViewController.swift */; };
 		CF89968627ABC50E005F6D58 /* AuthenticationTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89968527ABC50E005F6D58 /* AuthenticationTextFeild.swift */; };
+		CF89968827AE223B005F6D58 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89968727AE223B005F6D58 /* AuthenticationButton.swift */; };
+		CF89968A27AE3C07005F6D58 /* AuthenticationLowerHalfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89968927AE3C07005F6D58 /* AuthenticationLowerHalfView.swift */; };
+		CF89968C27AE56D3005F6D58 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89968B27AE56D3005F6D58 /* UIButton+Extension.swift */; };
+		CF89968F27AE57B3005F6D58 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CF89968E27AE57B3005F6D58 /* RxCocoa */; };
+		CF89969127AE57B3005F6D58 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CF89969027AE57B3005F6D58 /* RxRelay */; };
+		CF89969327AE57B3005F6D58 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CF89969227AE57B3005F6D58 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,9 @@
 		CF89968127ABBCC2005F6D58 /* ChatSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSearchViewController.swift; sourceTree = "<group>"; };
 		CF89968327ABBCD6005F6D58 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CF89968527ABC50E005F6D58 /* AuthenticationTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextFeild.swift; sourceTree = "<group>"; };
+		CF89968727AE223B005F6D58 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
+		CF89968927AE3C07005F6D58 /* AuthenticationLowerHalfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLowerHalfView.swift; sourceTree = "<group>"; };
+		CF89968B27AE56D3005F6D58 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF89969327AE57B3005F6D58 /* RxSwift in Frameworks */,
+				CF89969127AE57B3005F6D58 /* RxRelay in Frameworks */,
+				CF89968F27AE57B3005F6D58 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +172,7 @@
 			children = (
 				CF89966727ABAAB2005F6D58 /* UIView+Extension.swift */,
 				CF89966927ABAF0A005F6D58 /* UIColor+Extension.swift */,
+				CF89968B27AE56D3005F6D58 /* UIButton+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -169,6 +182,8 @@
 			children = (
 				CF89966C27ABB197005F6D58 /* AuthenticationLabel.swift */,
 				CF89968527ABC50E005F6D58 /* AuthenticationTextFeild.swift */,
+				CF89968727AE223B005F6D58 /* AuthenticationButton.swift */,
+				CF89968927AE3C07005F6D58 /* AuthenticationLowerHalfView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -210,6 +225,11 @@
 			dependencies = (
 			);
 			name = ChatStudyApp;
+			packageProductDependencies = (
+				CF89968E27AE57B3005F6D58 /* RxCocoa */,
+				CF89969027AE57B3005F6D58 /* RxRelay */,
+				CF89969227AE57B3005F6D58 /* RxSwift */,
+			);
 			productName = ChatStudyApp;
 			productReference = CF89961827ABA12E005F6D58 /* ChatStudyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -282,6 +302,9 @@
 				Base,
 			);
 			mainGroup = CF89960F27ABA12E005F6D58;
+			packageReferences = (
+				CF89968D27AE57B3005F6D58 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = CF89961927ABA12E005F6D58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -329,10 +352,13 @@
 				CF89966A27ABAF0A005F6D58 /* UIColor+Extension.swift in Sources */,
 				CF89968427ABBCD6005F6D58 /* AccountViewController.swift in Sources */,
 				CF89961C27ABA12E005F6D58 /* AppDelegate.swift in Sources */,
+				CF89968C27AE56D3005F6D58 /* UIButton+Extension.swift in Sources */,
 				CF89961E27ABA12E005F6D58 /* SceneDelegate.swift in Sources */,
+				CF89968A27AE3C07005F6D58 /* AuthenticationLowerHalfView.swift in Sources */,
 				CF89966D27ABB197005F6D58 /* AuthenticationLabel.swift in Sources */,
 				CF89967E27ABBC8E005F6D58 /* MainTabBarController.swift in Sources */,
 				CF89967C27ABBC60005F6D58 /* RegisterViewController.swift in Sources */,
+				CF89968827AE223B005F6D58 /* AuthenticationButton.swift in Sources */,
 				CF89968027ABBCAB005F6D58 /* RecordViewController.swift in Sources */,
 				CF89968227ABBCC2005F6D58 /* ChatSearchViewController.swift in Sources */,
 				CF89967A27ABBC31005F6D58 /* LoginViewController.swift in Sources */,
@@ -690,6 +716,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF89968D27AE57B3005F6D58 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF89968E27AE57B3005F6D58 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF89968D27AE57B3005F6D58 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		CF89969027AE57B3005F6D58 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF89968D27AE57B3005F6D58 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		CF89969227AE57B3005F6D58 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF89968D27AE57B3005F6D58 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF89961027ABA12E005F6D58 /* Project object */;
 }
